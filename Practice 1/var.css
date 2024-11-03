@@ -30,6 +30,13 @@
     --SmallerTextFont: 0.75rem;
 }
 
+@media (prefers-color-scheme: dark){
+    :root{
+        --backgroundColor : #d6dbcd;
+        --smallTextColor : #101111;
+    }
+}
+
 .main-card-container{
     width:32%;
     height:auto;
