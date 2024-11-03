@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+:root{
+    /* COLOR */
+    --backgroundColor : #A3B18A;
+    --heading : black;
+    --BgIconButton: black;
+    --ColorIconButton: white;
+    --smallTextColor : #c8d6d1;
+
+    /* SPACING */
+    --SmallRowGap: 1rem;
+    --LargeRowGap: 4rem;
+    --smallColumnGap: 0.4rem;
+    
+    /* PADDING */
+    --LargePadding: 2rem;
+    --SmallPadding: 1rem;
+
+    /* TEXT */
+    --BigTextFont: 3rem;
+    --SmallTextFont: 1rem;
+    --SmallerTextFont: 0.75rem;
+}
+
+.main-card-container{
+    width:32%;
+    height:auto;
+    margin: 3rem auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--LargeRowGap);
+    background-color: var(--backgroundColor);
+    padding: var(--LargePadding);
+    border-radius: 1rem;
+}
+
+.top-card-container{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--SmallRowGap);
+}
+
+.premium{
+    width: fit-content;
+    height:auto;
+}
+
+.premium h1{
+   color: var(--heading);
+}
+
+.price-month-container{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    column-gap: var(--smallColumnGap);
+}
+
+.price-month-container h1{
+    color: var(--heading);
+    font-size: var(--BigTextFont);
+}
+
+.price-month-container p{
+    color: #df0b4e;
+}
+
+.description{
+    width: 100%;
+    height:auto;
+}
+
+.description p{
+    color: var(--smallTextColor)
+}
+
+.bottom-card-container{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--SmallRowGap);
+}
+
+.background-pic-container{
+    background-image: url(../images/frame2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:auto;
+    padding: 5rem;
+}
+
+.fingerprint-button-container{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: var(--smallColumnGap);
+}
+
+.fingerprint{
+    width: fit-content;
+    height:auto;
+    background-color: var(--BgIconButton);
+    padding: var(--SmallPadding);
+    color: var(--ColorIconButton);
+    font-size: var(--SmallTextFont);
+    border-radius: 1rem;
+}
+
+button{
+    width: 100%;
+    height:auto;
+    padding: var(--SmallPadding);
+    background-color: var(--BgIconButton);
+    color: var(--ColorIconButton);
+    font-size: var(--SmallTextFont);
+    outline:none;
+    border: none;
+    border-radius: 1rem;
+}
